@@ -1,4 +1,4 @@
-import picture from "../assets/picture.jpg";
+import KasrAlneelPicture from "../assets/KasrAlneel.jpg";
 import AfterBefore from "../Components/AfterBefore/AfterBefore";
 import { ReactTyped } from "react-typed";
 const Home = ({ title }) => {
@@ -6,7 +6,7 @@ const Home = ({ title }) => {
     <div className=" p-8 flex items-center justify-center">
       <div>
         <img
-          src={picture}
+          src={KasrAlneelPicture}
           alt=""
           className="w-70 h-70 rounded-full object-cover border-amber-90"
         />
