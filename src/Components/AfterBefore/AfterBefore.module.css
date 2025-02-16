@@ -1,0 +1,26 @@
+.test {
+  width: fit-content;
+
+  position: relative;
+}
+
+.test::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 60%;
+  right: 15%;
+  height: 2px;
+  background-color: black;
+  z-index: 0;
+}
+.test::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 15%;
+  right: 60%;
+  height: 2px;
+  background-color: black;
+  z-index: 0;
+}
