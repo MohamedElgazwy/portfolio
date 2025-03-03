@@ -8,35 +8,43 @@ import {
 
 const Footer = ({ title }) => {
   return (
-    <footer className="text-center bg-blue-50">
-      <div className="grid gap-7 md:flex  items-center justify-around py-20 grid-cols-1 shadow-2xl ">
-        <div className="">
-          <h1 className="uppercase text-2xl font-semibold text-gray-900">
-            Location
-          </h1>
+    <footer className="text-center bg-blue-50 dark:bg-gray-800 dark:text-white">
+      <div className="grid gap-7 md:flex items-center justify-around py-20 grid-cols-1 shadow-2xl">
+        <div>
+          <h1 className="uppercase text-2xl font-semibold">Location</h1>
           <p>Al Minya, Egypt</p>
         </div>
-        <div className="">
-          <h1 className="uppercase text-2xl font-semibold text-gray-900">
-            Around the web
-          </h1>
+        <div>
+          <h1 className="uppercase text-2xl font-semibold">Around the web</h1>
           <div className="space-x-2 md:flex items-center justify-between px-6 py-3">
-            <a href="">
+            <a
+              href="https://web.facebook.com/profile.php?id=100084591367906"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebook} size="2x" color="#3b5998" />
             </a>
             <a href="">
               <FontAwesomeIcon icon={faTwitter} size="2x" color="#3b5998" />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/mohammed-algazwy-3092031b7/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} size="2x" color="#3b5998" />
             </a>
-            <a href="">
+            <a
+              href="https://www.instagram.com/mohammed_algazwy/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} size="2x" color="#3b5998" />
             </a>
           </div>
         </div>
-        <div className="">
-          <h1 className="uppercase text-2xl font-semibold text-gray-900">
+        <div>
+          <h1 className="uppercase text-2xl font-semibold">
             Around freelancer
           </h1>
           <p>

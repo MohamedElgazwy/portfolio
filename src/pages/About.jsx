@@ -1,16 +1,17 @@
+// About.jsx
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AfterBefore from "../Components/AfterBefore/AfterBefore";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
-    <div>
-      <div className="text-center text-4xl uppercase font-medium text-neutral-800  m-10">
+    <div className="dark:bg-gray-800 dark:text-white">
+      <div className="text-center text-4xl uppercase font-medium text-neutral-800 m-10 dark:text-white">
         <h1>about component</h1>
       </div>
-      <div className="grid grid-cols-1 ml-30 md:grid-cols-2 px-8 py-5 space-x-4 text-2xl text-gray-800">
-        <div className=" space-y-6">
-          <p className="text-gray-900 leading-relaxed font-sans mb-6">
+      <div className="grid grid-cols-1 ml-30 md:grid-cols-2 px-8 py-5 space-x-4 text-2xl text-gray-800 dark:text-white">
+        <div className="space-y-6">
+          <p className="text-gray-900 leading-relaxed font-sans mb-6 dark:text-white">
             My name is Mohamed Farag, and I bring extensive experience in web
             development and design. I thrive on tackling challenges, embracing
             innovation, and thinking creatively to deliver exceptional results.
