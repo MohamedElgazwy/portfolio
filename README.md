@@ -1,8 +1,28 @@
-# React + Vite
+# My Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website, built with **React** and **Tailwind CSS**. The website showcases my work, skills, and experience as a frontend developer. It is hosted on **Vercel** for easy access.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: The website is designed to look great on all devices, from mobile phones to large screens.
+- **Smooth Navigation**: Built with React, the website offers smooth transitions between sections.
+- **About Me Section**: Learn more about my background, skills, and career goals.
+- **Project Showcase**: Explore my projects, including their details and links to repositories or live demos.
+- **Contact Information**: Get in touch with me through a contact form or social media links.
+
+## Tech Stack
+
+- **Frontend**:
+  - React
+  - Tailwind CSS
+  
+- **Deployment**:
+  - Vercel
+
+## Getting Started
+
+To view the website locally on your machine, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
