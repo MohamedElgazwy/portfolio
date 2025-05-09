@@ -26,7 +26,6 @@ This is my personal portfolio showcasing my web development skills, experience, 
 
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 
 ---
@@ -34,7 +33,7 @@ This is my personal portfolio showcasing my web development skills, experience, 
 ## 🧑‍💻 Author
 
 - GitHub: [@MohamedElgazwy](https://github.com/MohamedElgazwy)
-- LinkedIn: [mohamedelgazwy](https://www.linkedin.com/in/mohamedelgazwy)
+- LinkedIn: [mohamedelgazwy]([https://www.linkedin.com/in/mohamedelgazwy](https://www.linkedin.com/in/mohammed-algazwy-3092031b7/?trk=public-profile-join-page))
 
 ---
 
