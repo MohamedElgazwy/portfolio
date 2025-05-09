@@ -1,28 +1,43 @@
-# My Personal Portfolio
+# 💼 Mohamed Elgazwy | Portfolio Website
 
-This is my personal portfolio website, built with **React** and **Tailwind CSS**. The website showcases my work, skills, and experience as a frontend developer. It is hosted on **Vercel** for easy access.
+This is my personal portfolio showcasing my web development skills, experience, and featured projects. Built with React and Tailwind CSS to provide a responsive, elegant, and fast user experience.
 
-## Features
+🔗 **Live Demo**: [portfolio-omega-vert-79.vercel.app](https://portfolio-omega-vert-79.vercel.app)
 
-- **Responsive Design**: The website is designed to look great on all devices, from mobile phones to large screens.
-- **Smooth Navigation**: Built with React, the website offers smooth transitions between sections.
-- **About Me Section**: Learn more about my background, skills, and career goals.
-- **Project Showcase**: Explore my projects, including their details and links to repositories or live demos.
-- **Contact Information**: Get in touch with me through a contact form or social media links.
+---
 
-## Tech Stack
+## 📸 Screenshot
 
-- **Frontend**:
-  - React
-  - Tailwind CSS
-  
-- **Deployment**:
-  - Vercel
+![Portfolio Screenshot](https://github.com/MohamedElgazwy/portfolio/raw/main/screenshot.png)
 
-## Getting Started
+---
 
-To view the website locally on your machine, follow these steps:
+## 🚀 Features
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+- 🔥 Responsive design for desktop and mobile
+- 🧭 Navigation with smooth scrolling
+- 📁 Projects section with live previews
+- 📄 Resume download link
+- 📬 Contact form with email integration
+
+---
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+---
+
+## 🧑‍💻 Author
+
+- GitHub: [@MohamedElgazwy](https://github.com/MohamedElgazwy)
+- LinkedIn: [mohamedelgazwy](https://www.linkedin.com/in/mohamedelgazwy)
+
+---
+
+## 📄 License
+
+This project is licensed for personal and portfolio use.
