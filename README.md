@@ -8,7 +8,8 @@ This is my personal portfolio showcasing my web development skills, experience, 
 
 ## 📸 Screenshot
 
-![Portfolio Screenshot](https://github.com/MohamedElgazwy/portfolio/raw/main/screenshot.png)
+![Portfolio Screenshot](<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/14fbf760-368d-46d7-a8e2-5877bb9abe77" />
+)
 
 ---
 
