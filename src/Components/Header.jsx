@@ -1,95 +1,75 @@
-import { useEffect, useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { FaMoon, FaSun } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+// Header.jsx
 import { useDarkMode } from "../Contexts/DarkModeContext";
+import { Link, useLocation } from "react-router-dom";
 
-function Header({ title }) {
-  const [navOpen, setNavOpen] = useState(false);
+function Header() {
   const { darkMode, toggleDarkMode } = useDarkMode();
-
-  const toggleNav = () => {
-    setNavOpen(!navOpen);
-  };
+  const location = useLocation();
 
   return (
-    <div className="md:flex items-center justify-between py-3 px-9 text-xl font-semibold shadow-xl dark:bg-gray-800 dark:text-white">
-      <h1 className="font-bold text-3xl py-3">
-        <NavLink to="/">{title}</NavLink>
-      </h1>
-      <nav className="hidden md:flex items-center justify-around space-x-5">
-        <NavLink
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/70 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700 transition-all duration-300">
+      <div className="container mx-auto flex justify-between items-center px-6 py-4">
+        {/* اللوجو على اليسار */}
+        <Link
           to="/"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white bg-emerald-800 rounded-full px-2 py-2 hover:text-black duration-150"
-              : "text-black-400  transition duration-300 dark:text-white"
-          }
+          className="text-2xl font-bold text-teal-600 dark:text-teal-400 tracking-wide hover:scale-105 transition-transform"
         >
-          Home
-        </NavLink>
+          Mohamed Aljazwi
+        </Link>
 
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white bg-emerald-800 rounded-full px-2 py-1 hover:text-black duration-150"
-              : "text-black-400  transition duration-300 dark:text-white"
-          }
-        >
-          About
-        </NavLink>
+        {/* التنقل على اليمين */}
+        <div className="flex items-center gap-6">
+          <nav className="flex space-x-6 text-gray-800 dark:text-gray-200 font-medium">
+            <Link
+              to="/"
+              className={`hover:text-teal-500 transition-colors ${
+                location.pathname === "/" || location.pathname === "/home"
+                  ? "text-teal-500 font-bold"
+                  : ""
+              }`}
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className={`hover:text-teal-500 transition-colors ${
+                location.pathname === "/about" ? "text-teal-500 font-bold" : ""
+              }`}
+            >
+              About
+            </Link>
+            <Link
+              to="/portfolio"
+              className={`hover:text-teal-500 transition-colors ${
+                location.pathname === "/portfolio"
+                  ? "text-teal-500 font-bold"
+                  : ""
+              }`}
+            >
+              Projects
+            </Link>
+            <Link
+              to="/contact"
+              className={`hover:text-teal-500 transition-colors ${
+                location.pathname === "/contact"
+                  ? "text-teal-500 font-bold"
+                  : ""
+              }`}
+            >
+              Contact
+            </Link>
+          </nav>
 
-        <NavLink
-          to="/portfolio"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white bg-emerald-800 rounded-full px-2 py-1 hover:text-black duration-150"
-              : "text-black-400  transition duration-300 dark:text-white"
-          }
-        >
-          Portfolio
-        </NavLink>
-
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white bg-emerald-800 rounded-full px-2 py-1 hover:text-black duration-150"
-              : "text-black-400  transition duration-300 dark:text-white"
-          }
-        >
-          Contact
-        </NavLink>
-        <button onClick={toggleDarkMode} className="cursor-pointer">
-          {darkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
-        </button>
-      </nav>
-      <div className="md:hidden" onClick={toggleNav}>
-        {navOpen ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
+          {/* زر تبديل الوضع الداكن */}
+          <button
+            onClick={toggleDarkMode}
+            className="px-3 py-2 rounded-lg border border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white transition-all duration-300"
+          >
+            {darkMode ? "☀️" : "🌙"}
+          </button>
+        </div>
       </div>
-      <ul
-        className={`md:hidden w-full text-amber-400 center transition-all duration-300 ${
-          navOpen ? "block" : "hidden"
-        }`}
-      >
-        <li className="py-4 hover:text-amber-400">
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li className="py-4 hover:text-amber-400">
-          <NavLink to="/portfolio">Portfolio</NavLink>
-        </li>
-        <li className="py-4 hover:text-amber-400">
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li className="py-4 hover:text-amber-400">
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-        <li onClick={toggleDarkMode} className="cursor-pointer">
-          {darkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
-        </li>
-      </ul>
-    </div>
+    </header>
   );
 }
 

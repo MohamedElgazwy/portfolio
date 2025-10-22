@@ -1,66 +1,50 @@
 // About.jsx
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AfterBefore from "../Components/AfterBefore/AfterBefore";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="dark:bg-gray-800 dark:text-white">
-      <div className="text-center text-4xl uppercase font-medium text-neutral-800 m-10 dark:text-white">
-        <h1>about component</h1>
-      </div>
-      <div className="grid grid-cols-1 ml-30 md:grid-cols-2 px-8 py-5 space-x-4 text-2xl text-gray-800 dark:text-white">
-        <div className="space-y-6">
-          <p className="text-gray-900 leading-relaxed font-sans mb-6 dark:text-white">
-            My name is Mohamed Farag, and I bring extensive experience in web
-            development and design. I thrive on tackling challenges, embracing
-            innovation, and thinking creatively to deliver exceptional results.
-            My focus is on crafting visually appealing and immersive web
-            experiences by writing clean, user-centric code. I am deeply
-            passionate about my work and continuously seek opportunities to
-            enhance my skills and expand my expertise.
-          </p>
-          <p>Key responsibilities in my role include:</p>
-          <p>
-            1- Designing and developing websites and landing pages from the
-            ground up.
-          </p>
-          <p>
-            2- Delivering professional, fully responsive websites optimized for
-            all devices.
-          </p>
-          <p>
-            3- Implementing responsive design techniques, including media
-            queries.
-          </p>
-        </div>
-        <div className="ml-3 px-3">
-          <ul className="px-3 space-y-6 uppercase">
-            <li className="text-3xl font-semibold mb-4">Technical Skills</li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faStar} className="text-yellow-400 mr-3" />
-              HTML / HTML5
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faStar} className="text-yellow-400 mr-3" />
-              CSS / CSS3
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faStar} className="text-yellow-400 mr-3" />
-              JavaScript
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faStar} className="text-yellow-400 mr-3" />
-              Bootstrap
-            </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faStar} className="text-yellow-400 mr-3" />
-              React
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <section className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col items-center justify-center px-8 py-20">
+      <motion.h2
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-4xl font-bold mb-8 text-emerald-600 dark:text-emerald-400"
+      >
+        About Me
+      </motion.h2>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+        className="max-w-3xl text-center text-lg leading-relaxed"
+      >
+        <p>
+          Hello! I'm{" "}
+          <span className="font-semibold text-emerald-600">
+            Mohammed Aljazwi
+          </span>
+          , a frontend developer from Libya. I’m currently studying at the
+          Faculty of Computer Science, Minia University, and also work as a{" "}
+          <span className="font-semibold">
+            Frontend Instructor at eta_Platform
+          </span>
+          .
+        </p>
+
+        <p className="mt-6">
+          I’m passionate about creating smooth, responsive, and high-quality web
+          experiences using <strong>React.js</strong>, <strong>Next.js</strong>,
+          and <strong>Tailwind CSS</strong>. My goal is to build modern digital
+          products that combine design elegance with functionality.
+        </p>
+
+        <p className="mt-6">
+          When I’m not coding, I enjoy teaching, mentoring students, and
+          improving my English skills through daily speaking practice.
+        </p>
+      </motion.div>
+    </section>
   );
 };
 
