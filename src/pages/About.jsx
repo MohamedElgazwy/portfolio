@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col items-center justify-center px-8 py-20">
+    <section className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-12 sm:py-20">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold mb-8 text-emerald-600 dark:text-emerald-400"
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-emerald-600 dark:text-emerald-400"
       >
         About Me
       </motion.h2>

@@ -29,12 +29,12 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white px-6 py-20">
+    <section className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white px-4 sm:px-6 py-12 sm:py-20">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-4xl font-bold mb-8 text-emerald-600 dark:text-emerald-400"
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-emerald-600 dark:text-emerald-400"
       >
         Get In Touch
       </motion.h2>
@@ -45,10 +45,10 @@ const Contact = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
-        className="w-full max-w-lg bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 space-y-6"
+        className="w-full max-w-lg bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 space-y-4 sm:space-y-6"
       >
         <div>
-          <label className="block text-lg font-medium mb-1">Name</label>
+          <label className="block text-base sm:text-lg font-medium mb-2">Name</label>
           <input
             type="text"
             name="from_name"
@@ -58,7 +58,7 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block text-lg font-medium mb-1">Email</label>
+          <label className="block text-base sm:text-lg font-medium mb-2">Email</label>
           <input
             type="email"
             name="from_email"
@@ -68,12 +68,12 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block text-lg font-medium mb-1">Message</label>
+          <label className="block text-base sm:text-lg font-medium mb-2">Message</label>
           <textarea
             name="message"
             rows="4"
             placeholder="Your message..."
-            className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-900 outline-none focus:ring-2 focus:ring-emerald-500"
+            className="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-gray-900 outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
             required
           ></textarea>
         </div>
