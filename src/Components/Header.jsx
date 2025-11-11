@@ -1,4 +1,3 @@
-// Header.jsx
 import { useDarkMode } from "../Contexts/DarkModeContext";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
@@ -8,7 +7,9 @@ function Header() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isActive = (path) => location.pathname === path || (path === "/" && location.pathname === "/home");
+  const isActive = (path) =>
+    location.pathname === path ||
+    (path === "/" && location.pathname === "/home");
 
   const navLinks = [
     { to: "/", label: "Home" },
@@ -20,7 +21,6 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/70 dark:bg-gray-900/80 border-b border-gray-200 dark:border-gray-700 transition-all duration-300">
       <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 py-4">
-        {/* Logo */}
         <Link
           to="/"
           className="text-lg sm:text-2xl font-bold text-teal-600 dark:text-teal-400 tracking-wide hover:scale-105 transition-transform truncate"
@@ -28,17 +28,27 @@ function Header() {
           Mohamed Aljazwi
         </Link>
 
-        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="lg:hidden flex flex-col gap-1.5 mr-4"
         >
-          <span className={`w-6 h-0.5 bg-gray-800 dark:bg-white transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`}></span>
-          <span className={`w-6 h-0.5 bg-gray-800 dark:bg-white transition-all ${menuOpen ? "opacity-0" : ""}`}></span>
-          <span className={`w-6 h-0.5 bg-gray-800 dark:bg-white transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}></span>
+          <span
+            className={`w-6 h-0.5 bg-gray-800 dark:bg-white transition-all ${
+              menuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          ></span>
+          <span
+            className={`w-6 h-0.5 bg-gray-800 dark:bg-white transition-all ${
+              menuOpen ? "opacity-0" : ""
+            }`}
+          ></span>
+          <span
+            className={`w-6 h-0.5 bg-gray-800 dark:bg-white transition-all ${
+              menuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          ></span>
         </button>
 
-        {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-6">
           <nav className="flex space-x-4 xl:space-x-6 text-gray-800 dark:text-gray-200 font-medium">
             {navLinks.map((link) => (
@@ -72,7 +82,9 @@ function Header() {
                   to={link.to}
                   onClick={() => setMenuOpen(false)}
                   className={`hover:text-teal-500 transition-colors py-2 ${
-                    isActive(link.to) ? "text-teal-500 font-bold" : "text-gray-800 dark:text-gray-200"
+                    isActive(link.to)
+                      ? "text-teal-500 font-bold"
+                      : "text-gray-800 dark:text-gray-200"
                   }`}
                 >
                   {link.label}
