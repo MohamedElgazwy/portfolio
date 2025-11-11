@@ -12,7 +12,6 @@ export default function Home() {
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
       }`}
     >
-      {/* Profile Section with Enhanced Image Design */}
       <motion.div
         className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12 max-w-6xl mb-12 w-full"
         initial={{ opacity: 0, y: 40 }}
@@ -32,7 +31,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          {/* Glowing effect behind image */}
+
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl -z-10"></div>
         </motion.div>
 
@@ -53,8 +52,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Frontend Developer | Instructor at ACM Minia University &
-            eta_Platform
+            Fullstack Developer | Instructor at eta_Platform | English Speaker
           </motion.p>
 
           <motion.p
@@ -63,10 +61,12 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Passionate about building modern, fast, and responsive web
-            interfaces. I've mastered React, Next.js, and Tailwind CSS, and I'm
-            always learning to become one of the best frontend developers in the
-            Arab World.
+            I build modern, fast, and scalable web applications using the MERN
+            stack (MongoDB, Express, React, Node.js). I’m passionate about
+            crafting smooth, responsive, and user-friendly digital experiences
+            that bring ideas to life. 💡 Always learning, teaching, and striving
+            to become one of the top full-stack developers in the Arab world. 🌍
+            English speaker | Based in Libya
           </motion.p>
         </div>
       </motion.div>
@@ -87,7 +87,9 @@ export default function Home() {
           whileTap={{ scale: 0.95 }}
         >
           {darkMode ? "☀️" : "🌙"}
-          <span className="hidden sm:inline">Toggle {darkMode ? "Light" : "Dark"} Mode</span>
+          <span className="hidden sm:inline">
+            Toggle {darkMode ? "Light" : "Dark"} Mode
+          </span>
           <span className="sm:hidden">{darkMode ? "Light" : "Dark"} Mode</span>
         </motion.button>
 

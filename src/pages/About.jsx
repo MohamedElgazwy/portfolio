@@ -24,7 +24,7 @@ const About = () => {
           <span className="font-semibold text-emerald-600">
             Mohammed Aljazwi
           </span>
-          , a frontend developer from Libya. I’m currently studying at the
+          , a fullstack developer from Libya. I’m currently studying at the
           Faculty of Computer Science, Minia University, and also work as a{" "}
           <span className="font-semibold">
             Frontend Instructor at eta_Platform
