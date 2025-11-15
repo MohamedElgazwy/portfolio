@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --primary: #0f766e; /* Teal-700 - Professional & trustworthy */
+  --primary-light: #14b8a6; /* Teal-500 */
+  --secondary: #6366f1; /* Indigo-500 - Modern & techy */
+  --accent: #8b5cf6; /* Violet-500 - Creative */
+  --dark: #0f172a; /* Slate-900 - Professional dark */
+  --light: #f8fafc; /* Slate-50 - Clean white */
+}

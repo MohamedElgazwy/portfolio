@@ -10,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_7stnuiq", // ✅ Service ID الحقيقي
-        "template_hs6gx89", // ✅ Template ID الحقيقي
+        "service_7stnuiq",
+        "template_hs6gx89",
         formRef.current,
-        "p1-pE7qXJ6DHkrdy0" // ✅ Public Key الحقيقي
+        "p1-pE7qXJ6DHkrdy0"
       )
       .then(
         (result) => {
@@ -48,7 +48,9 @@ const Contact = () => {
         className="w-full max-w-lg bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-8 space-y-4 sm:space-y-6"
       >
         <div>
-          <label className="block text-base sm:text-lg font-medium mb-2">Name</label>
+          <label className="block text-base sm:text-lg font-medium mb-2">
+            Name
+          </label>
           <input
             type="text"
             name="from_name"
@@ -58,7 +60,9 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block text-base sm:text-lg font-medium mb-2">Email</label>
+          <label className="block text-base sm:text-lg font-medium mb-2">
+            Email
+          </label>
           <input
             type="email"
             name="from_email"
@@ -68,7 +72,9 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label className="block text-base sm:text-lg font-medium mb-2">Message</label>
+          <label className="block text-base sm:text-lg font-medium mb-2">
+            Message
+          </label>
           <textarea
             name="message"
             rows="4"

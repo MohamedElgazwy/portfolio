@@ -72,7 +72,6 @@ function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="absolute top-full left-0 right-0 lg:hidden bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
             <nav className="flex flex-col space-y-3 p-4">

@@ -1,4 +1,3 @@
-// Home.jsx
 import profilePhoto from "../assets/photo.jpg";
 import { motion } from "framer-motion";
 import { useDarkMode } from "../Contexts/DarkModeContext";
@@ -9,7 +8,9 @@ export default function Home() {
   return (
     <div
       className={`min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 transition-colors duration-500 pt-20 sm:pt-24 pb-8 ${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+        darkMode
+          ? "bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white"
+          : "bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 text-gray-900"
       }`}
     >
       <motion.div

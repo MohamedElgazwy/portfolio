@@ -24,7 +24,7 @@ const About = () => {
           <span className="font-semibold text-emerald-600">
             Mohammed Aljazwi
           </span>
-          , a fullstack developer from Libya. I’m currently studying at the
+          , a Fullstack developer from Libya. I’m currently studying at the
           Faculty of Computer Science, Minia University, and also work as a{" "}
           <span className="font-semibold">
             Frontend Instructor at eta_Platform
@@ -34,9 +34,11 @@ const About = () => {
 
         <p className="mt-6">
           I’m passionate about creating smooth, responsive, and high-quality web
-          experiences using <strong>React.js</strong>, <strong>Next.js</strong>,
-          and <strong>Tailwind CSS</strong>. My goal is to build modern digital
-          products that combine design elegance with functionality.
+          experiences using <strong>React.js</strong>, <strong>Next.js</strong>,{" "}
+          <strong>Express</strong>, <strong>Node.js</strong>,{" "}
+          <strong>MongoDB</strong>, and <strong>Tailwind CSS</strong>. My goal
+          is to build modern digital products that combine design elegance with
+          functionality.
         </p>
 
         <p className="mt-6">
