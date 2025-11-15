@@ -95,7 +95,7 @@ export default function Home() {
         </motion.button>
 
         <motion.a
-          href="/CV Mohamed Farag.pdf"
+          href="Mohammed_farag.pdf"
           download
           className="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-2xl font-semibold shadow-lg border border-gray-300 dark:border-gray-600 
           transition-all duration-300 hover:scale-105 hover:shadow-xl
